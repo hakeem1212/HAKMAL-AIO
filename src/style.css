@@ -1,0 +1,808 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  margin: 0 8px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #f2f3f4;
+  /* background: linear-gradient(#efefff, #cccbff); */
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+/* partir style du header */
+.tof_head {
+  width: 60px;
+}
+/* fin partir style header */
+
+/* =================== style card de swiper ====================== */
+
+/* partir card */
+.wrapper {
+  max-width: 1100px 10px;
+  /* max-width: 1496px 10px; */
+  padding: 20px;
+  margin: 0 23px 35px;
+  overflow: hidden;
+}
+
+.wrapper .card1 {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.wrapper .card1:hover {
+  transform: translateY(-10px);
+}
+
+.card1 .card-image {
+  position: relative;
+}
+
+.card1 .card-image img {
+  width: 100%;
+  border-radius: 22px;
+  padding: 10px;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+.card1 .card-image .card-tag {
+  position: absolute;
+  left: 25px;
+  top: 25px;
+  font-size: 0.75rem;
+  border-radius: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #ab4a05;
+  padding: 5px 15px;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.card1 .card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 25px 25px;
+}
+
+.card1 .card-content .card1-title {
+  color: black;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 15px;
+}
+
+.card1 .card-content .card1-text {
+  color: #747474;
+  font-size: 0.95rem;
+  font-weight: 300;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.card1 .card-content .card-footer {
+  display: flex;
+  align-items: center;
+  padding-top: 15px;
+  margin-top: auto;
+  justify-content: space-between;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.card1 .card-footer .card-profile {
+  display: flex;
+  align-items: center;
+}
+
+.card1 .card-profile img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card1 .card-profile .card-profile-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.card1 .card-profile .card-profile-name {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #202020;
+}
+
+.card1 .card-profile .card-profile-role {
+  font-size: 0.875rem;
+  color: #df6b05;
+}
+
+.card1 .card-footer .card-button {
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 0.81rem;
+  font-weight: 600;
+  text-decoration: none;
+  background: linear-gradient(135deg, #e29417 0%, #0af056 100%);
+  box-shadow: 0 8px 15px rgba(99, 102, 241, 0.2);
+  transition: all 0.3s ease;
+}
+
+.card1 .card-footer .card-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(99, 102, 241, 0.3);
+}
+
+.wrapper .swiper-pagination-bullet {
+  height: 15px;
+  width: 15px;
+  overflow: hidden;
+  opacity: 1;
+  background: #b1b3f8;
+}
+
+.wrapper .swiper-pagination-bullet-active::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: #6366f1;
+  transform: scaleX(0);
+  transform-origin: left center;
+  animation: autoplay-loading 5s linear forwards;
+}
+
+.container:hover .wrapper .swiper-pagination-bullet-active::before {
+  animation-play-state: paused;
+}
+
+@keyframes autoplay-loading {
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.wrapper :where(.swiper-button-prev, .swiper-button-next) {
+  color: #6363f1;
+  margin-top: -35px;
+  transition: all 0.3s ease;
+}
+
+.wrapper :where(.swiper-button-prev, .swiper-button-next):hover {
+  color: #8b5cf6;
+}
+
+/* =================== fin style card de swiper ======================= */
+
+/* =================== debut style des categorie===================== */
+.cat {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.title-categorie {
+  text-transform: uppercase;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.les-cat {
+  display: grid;
+  gap: 30px;
+  width: auto;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.cat-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  height: auto;
+  border-radius: 15px;
+
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.cat-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.profil-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.cat-text {
+  width: 250px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.cat-footer {
+  padding-bottom: 10px;
+}
+
+.cat-invest {
+  width: 65%;
+}
+
+.cat-body-invest {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+  height: auto;
+  border-radius: 15px;
+  background: #fff;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+
+/* par catergorie */
+.cat-agro .cat-body {
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../public/img_cate_com/agro/sac-de-papier-avec-des-legumes.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.cat-immo .cat-body {
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../public/img_cate_com/immobi/vecteezy_elegant-housing-exterior-in-modern-design_67390895.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.cat-loisi .cat-body {
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../public/img_cate_com/tourisme/una-maestosita-dinanzi.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.cat-mod .cat-body {
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../public/img_cate_com/mode/pngtree-cosmetics-product-ads-poster-template-beauty-cosmetic-png-image_2132138.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.cat-vehi .cat-body {
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../public/img_cate_com/bolide/1078590-17.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.cat-vet .cat-body {
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../public/img_cate_com/bolide/1078590-17.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.cat-vet .cat-body {
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../public/img_cate_com/vete/1023712_Main_1937269.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.cat-invest .cat-body-invest {
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../public/img_cate_com/minier/jad20240416-eco-dossier-mines-guinee-simandou.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* =========fin style des caategoies================== */
+
+/* ===========debut partir about============ */
+.container-about {
+  width: 100%;
+  margin-top: 20px;
+  height: 600px;
+  padding: 20px;
+  display: flex;
+  background: #ecf0f1;
+  height: auto;
+}
+.about-body {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+  width: auto;
+  margin: 0 auto;
+  gap: 5%;
+}
+
+.about-image {
+  width: 100%;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 15px;
+}
+
+.about-contenu {
+  /* display: flex;
+  flex-direction: column; */
+  width: 100%;
+  padding: 10px;
+}
+
+.about-contenu span {
+  letter-spacing: 2px;
+  font-size: 1.2rem;
+}
+
+.about-contenu p {
+  text-align: justify;
+  opacity: 80%;
+}
+
+/* ============fin partir about */
+
+/* ===================partir temoin ================ */
+
+.temoin {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.temoin-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.temoin-body {
+  width: 100%;
+}
+
+.temoin-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 70%;
+  height: auto;
+}
+
+.temoin-text p {
+  text-align: center;
+}
+
+.les-temoin {
+  padding-bottom: 50px;
+}
+
+.temoin-text-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 15px;
+}
+
+.temoin-text-header span {
+  color: #078631;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+}
+
+/* ===========fin partir temoin ==================== */
+
+/* ============partir footer contactez-nous */
+.footer-page {
+  display: flex;
+  width: 95%;
+  height: auto;
+  margin: 0 auto;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.pose-quest {
+  display: flex;
+  flex-direction: column;
+}
+
+.pose-quest p {
+  text-transform: uppercase;
+  opacity: 70%;
+}
+.pose-quest h2 {
+  font-size: 3rem;
+  font-weight: 6;
+  letter-spacing: 2px;
+}
+
+.footer-page-adresse {
+  display: flex;
+  flex-direction: column;
+}
+.footer-page-adresse_head p {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.footer-page-adresse {
+  font-weight: 6;
+}
+
+.footer-page-contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-page-contact p {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.footer-page-contact a {
+  text-decoration: none;
+  color: black;
+  font-weight: 40;
+  letter-spacing: 1px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid black;
+  transition: all 0.3s ease;
+}
+
+.footer-page-contact a:hover {
+  color: rgb(118, 115, 115);
+  border-bottom: 1px solid rgb(118, 115, 115);
+}
+
+/* =============== fin partir footer contactez-nous */
+
+/* ===============partir footer 2 with link ============== */
+.footer-page2 {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
+  padding-top: 60px;
+  margin: 0 auto;
+  background-color: #242424;
+}
+.footer-page2-logo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: left;
+}
+.footer-page2-logo p {
+  color: white;
+  font-size: 3rem;
+  font-weight: 1;
+  letter-spacing: 5px;
+}
+.footer-page2-logo img {
+  width: 200px;
+}
+.footer-page2-logo span {
+  font-weight: 600;
+}
+
+.footer-page2-link-header p {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+}
+
+.footer-page2-les-link a {
+  text-decoration: none;
+  color: #979a9a;
+  letter-spacing: 1px;
+  font-weight: 3;
+  transition: all 0.3s ease;
+}
+
+.footer-page2-les-link a:hover {
+  color: white;
+  padding-bottom: 3px;
+  border-bottom: 1px solid #979a9a;
+}
+
+.footer-page2-socio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-page2-socio-link {
+  list-style: none;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  padding: 0px;
+  gap: 10px;
+}
+.footer-page2-socio-link a {
+  color: #979a9a;
+  transition: all 0.3s ease;
+}
+.footer-page2-socio-link a:hover {
+  color: #fff;
+  padding: 3px 3px;
+  zoom: 1;
+}
+
+.footer-page2-contact-header p {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 3;
+}
+
+.mybtn {
+  margin-top: 10px;
+}
+
+.copyri p {
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  align-items: center; /* centre verticalement */
+  justify-content: center;
+  padding-top: 10px;
+  font-weight: 10;
+  letter-spacing: 1px;
+}
+
+/* ================ fin partir footer 2 with link ==========  */
+
+/* ====================== partir page about ================ */
+.about_body {
+  display: flex;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 10px;
+  background-image: linear-gradient(
+      rgba(241, 241, 241, 0.9),
+      rgba(241, 241, 241, 0.9)
+    ),
+    url("../public/logo/logo_office_orange.png");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: space-around;
+  padding: 20px;
+}
+.about_title {
+  display: flex;
+  width: auto;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.about_title img {
+  width: 500px;
+  height: auto;
+}
+
+.about-tit {
+  width: auto;
+  font-weight: 600;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #202020;
+}
+
+.about_content {
+  margin: 0 auto;
+  padding-right: 20px;
+  width: auto;
+}
+.about_content p {
+  text-align: justify;
+  font-weight: 200;
+}
+
+/* ====================== fin partir page about ================ */
+
+/* style non disponinible */
+.alert_info{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.alert_info p{
+  font-size: 2rem;
+  font-weight: 100;
+  opacity: 50%;
+  text-align: center;
+}
+
+/*  */
+
+/* ===========pour les petite ecran for swiper=========== */
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+}
+
+/* la partir des categorie */
+@media (max-width: 966px) {
+  .les-cat {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* liste categorie */
+  .list_cato1 {
+    display: none;
+  }
+  /* for abou */
+  .about-body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-image img {
+    object-fit: cover;
+  }
+  .footer-page {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .pose-quest {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-page-adresse {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-page-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* pour le footer 2 */
+  .footer-page2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 20px;
+    height: auto;
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+  .footer-page2-link {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .footer-page2-les-link {
+    display: flex;
+    gap: 10px;
+  }
+  .footer-page2-socio {
+    display: flex;
+  }
+  /* page about */
+  .about_body {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+/* Petit écran (ex: téléphone) → 1 colonne */
+@media (max-width: 667px) {
+  .les-cat {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* fin partir categorie */
+
+/* la partir de card swipper */
+@media (max-width: 768px) {
+  .wrapper {
+    margin: 0 10px 25px;
+  }
+  .wrapper :where(.swiper-button-prev, .swiper-button-next) {
+    display: none;
+  }
+}
+
+/* la part */

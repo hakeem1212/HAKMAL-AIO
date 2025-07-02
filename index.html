@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="public/logo/logo_office_orange.png"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ========== for link ==================== -->
+
+    <!-- for css css bootstap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+
+    <!-- my css -->
+    <link rel="stylesheet" href="src/style.css" />
+
+    <!-- for swiper css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- pour les icon awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <title>HAKMAL AIO</title>
+  </head>
+  <body>
+    <section>
+      <!-- partir navbar -->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"
+            ><img
+              src="../logo/logo_office_orange.png"
+              alt=""
+              class="tof_head image-fuid"
+            />
+            HAKMAL AIO</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul
+              class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+              style="--bs-scroll-height: 100px"
+            >
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >ACCUEILLE</a
+                >
+              </li>
+              <!-- partie categorie avec les sous liens -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  CATEGORIE
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="public/categorie/agro-1.html"
+                      ><i class="bi bi-shop-window"></i> Agroalimentaire</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="public/categorie/immo1.html"
+                      ><i class="bi bi-building"></i> Immobilier</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="public/categorie/loisi_voy1.html"
+                      ><i class="bi bi-person-arms-up"></i> Loisir & Voyage</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="public/categorie/mode1.html"
+                      ><i class="bi bi-claude"></i> Mode</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="public/categorie/vehi_mo1.html"
+                      ><i class="bi bi-car-front-fill"></i> Véhicule & Moto</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fa-solid fa-shirt"></i> vêtement & Chaussure</a
+                    >
+                  </li>
+                  <li><a class="dropdown-item" href="#"></a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="public/categorie/minier.html"
+                      ><i class="bi bi-wallet-fill"></i> Marché Miniers
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="public/mypage/mypromo.html"
+                  >MY PROMO</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true"
+                  >Se connecte</a
+                >
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- fin partir navbar -->
+    </section>
+
+    <!--la partir carossel 1 de bootstrap  -->
+
+    <!-- ===========fin la partir carossel 1 de bootstrap================  -->
+
+    <!-- ==========================debut partir swipper 1 ===================-->
+
+    <section>
+      <div class="container-fluid swiper">
+        <div class="wrapper">
+          <div class="card-list swiper-wrapper">
+            <!-- 1 card -->
+
+            <div class="card1 swiper-slide">
+              <div class="card-image">
+                <img
+                  src="public/img/img vehicule/occase/citroen c3 nbc TC/IMG-20250629-WA0024.jpg"
+                  alt="produit"
+                />
+                <p class="card-tag">Occasion</p>
+              </div>
+              <div class="card-content">
+                <h3 class="card1-title">citroen c3 Année 2017</h3>
+                <div class="text_swiper">
+                  <p class="card1-text">
+                    citröen c3 Année 2017 manuel diesel faible consommation.
+                    kilometrage : 105000grand ecran tactile Jante Aluminium
+                    detecteur d’obstacles Radar avant arrière Phare Led anti
+                    brouillard interieur tissu climatisation bi-zone venant deja
+                    dédouanée visible au Point E
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <div class="card-profile">
+                    <img src="public/logo/logo_office_orange.png" alt="" />
+                    <div class="card-profile-info">
+                      <span class="card-profile-name">HAKMAL AIO</span>
+                      <span class="card-profile-role">AIO</span>
+                    </div>
+                  </div>
+                  <a href="public/categorie/vehi_mo1.html" class="card-button"
+                    >Voir plus</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- fin 1 card -->
+
+            <!-- second card -->
+
+            <div class="card1 swiper-slide">
+              <div class="card-image">
+                <img
+                  src="public/img/img vehicule/occase/toyota/venant/toyota RAV4 -XLE src WHT/IMG-20250523-WA0196.jpg"
+                  alt="produit"
+                />
+                <p class="card-tag">venant</p>
+              </div>
+              <div class="card-content">
+                <h3 class="card1-title">TOYOTA RAV4 -XLE AWD</h3>
+                <p class="card1-text">
+                  Année : 2019 Automatique Essence Moteur : 4Cylindres 2.0
+                  Version : 4x4 -AWD Kilométrage : 90.000km Détails : Full
+                  option, Système Clefs intelligente LET’S GO. Véhicule de
+                  5places climatisées très propre Avec un grand écran tactile
+                  plus caméra de recule, à bord, Lumière blanche, phars xenon,
+                  avec Antibrouillards avants....
+                </p>
+                <div class="card-footer">
+                  <div class="card-profile">
+                    <img src="public/logo/logo_office_orange.png" alt="" />
+                    <div class="card-profile-info">
+                      <span class="card-profile-name">HAKMAL</span>
+                      <span class="card-profile-role">AIO</span>
+                    </div>
+                  </div>
+                  <a href="public/categorie/vehi_mo1.html" class="card-button"
+                    >Voir plus</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- fin second card -->
+
+            <!-- 3 card -->
+
+            <div class="card1 swiper-slide">
+              <div class="card-image">
+                <img
+                  src="public/img/img vet and shoes/ensemble shoes sac et sac/fourni/madame diawara/1/1.jpg"
+                  alt="produit"
+                />
+                <p class="card-tag">Ensemble sac</p>
+              </div>
+              <div class="card-content">
+                <h3 class="card1-title">Glow & Go – Orange Vibe</h3>
+                <p class="card1-text">
+                  une paire de sandales ultra-confortables au design chic et
+                  minimaliste, accompagnée d’un sac à bandoulière matelassé à la
+                  finition dorée élégante.
+                </p>
+                <div class="card-footer">
+                  <div class="card-profile">
+                    <img src="public/logo/logo_office_orange.png" alt="" />
+                    <div class="card-profile-info">
+                      <span class="card-profile-name">HAKMAL</span>
+                      <span class="card-profile-role">AIO</span>
+                    </div>
+                  </div>
+                  <a href="public/categorie/vet_chau1.html" class="card-button"
+                    >Voir plus</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- fin 3 card -->
+
+            <!-- 4 card -->
+
+            <div class="card1 swiper-slide">
+              <div class="card-image">
+                <img
+                  src="public/img/img tourisme/dest dakar/1 monument/unnamed.webp"
+                  alt="produit"
+                />
+                <p class="card-tag">BALADE</p>
+              </div>
+              <div class="card-content">
+                <h3 class="card1-title">
+                  Monument de la Renaissance Africaine
+                </h3>
+                <p class="card1-text">
+                  Plongez dans l’histoire, la culture et la grandeur de
+                  l’Afrique à travers une visite guidée exceptionnelle. Admirez
+                  la plus haute statue d’Afrique de l’Ouest, perchée sur l’une
+                  des plus belles collines de Dakar, avec une vue panoramique à
+                  couper le souffle sur l’océan Atlantique..
+                </p>
+                <div class="card-footer">
+                  <div class="card-profile">
+                    <img src="public/logo/logo_office_orange.png" alt="" />
+                    <div class="card-profile-info">
+                      <span class="card-profile-name">HAKMAL</span>
+                      <span class="card-profile-role">AIO</span>
+                    </div>
+                  </div>
+                  <a href="public/categorie/loisi_voy1.html" class="card-button"
+                    >voir plus</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- fin 4 card -->
+
+            <!-- 5 card -->
+
+            <div class="card1 swiper-slide">
+              <div class="card-image">
+                <img
+                  src="public/img/img vet and shoes/VETEMENT/vet femme/fourni/madame diawa/1/1.jpg"
+                  alt="produit"
+                />
+                <p class="card-tag">MODE</p>
+              </div>
+              <div class="card-content">
+                <h3 class="card1-title">Robe Ivory Shadow</h3>
+                <p class="card1-text">
+                  L’élégance sculptée dans le contraste. Quand le noir rencontre
+                  le blanc, la beauté devient art. Confiance, grâce et puissance
+                  réunies en un seul regard.
+                </p>
+                <div class="card-footer">
+                  <div class="card-profile">
+                    <img src="public/logo/logo_office_orange.png" alt="" />
+                    <div class="card-profile-info">
+                      <span class="card-profile-name">HAKMAL</span>
+                      <span class="card-profile-role">AIO</span>
+                    </div>
+                  </div>
+                  <a href="public/categorie/vet_chau1.html" class="card-button"
+                    >Voir plus</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- fin 5 card -->
+          </div>
+          <!-- need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </section>
+
+    <!--================= fin partir swipper 1 ==============================-->
+
+    <section>
+      <!-- partir main les categories -->
+      <div class="container-fluid cat">
+        <!-- titre  -->
+        <h3 class="title-categorie">categories</h3>
+
+        <!-- les categrie -->
+
+        <div class="les-cat">
+          <!-- partie agro -->
+          <div class="cat-agro">
+            <div class="cat-body">
+              <!-- entete -->
+              <div class="cat-header">
+                <img
+                  class="profil-img"
+                  src="public/img_cate_com/agro/vecteezy_fresh-vegetables-overflowing-in-a-shopping-cart-ready-for_57446916.png"
+                  alt="produit"
+                />
+
+                <h4 class="profil">Agroalimentaire</h4>
+              </div>
+              <!-- fin entete -->
+
+              <!-- debut corps -->
+              <div class="cat-text">
+                <p>
+                  Découvrez une large gamme de produits alimentaires
+                  soigneusement sélectionnés pour répondre à vos besoins au
+                  quotidien.
+                </p>
+              </div>
+              <!-- fin corps -->
+
+              <!-- pied du cat -->
+              <div class="cat-footer"></div>
+              <a
+                class="btn btn-outline-success"
+                href="public/categorie/agro-1.html"
+                >Go <i class="bi bi-arrow-up-right-square-fill"></i
+              ></a>
+              <!-- fin pied de cat -->
+            </div>
+          </div>
+          <!-- fin agro -->
+
+          <!-- debut immo -->
+          <div class="cat-immo">
+            <div class="cat-body">
+              <!-- entete -->
+              <div class="cat-header">
+                <img
+                  class="profil-img"
+                  src="public/img_cate_com/immobi/vecteezy_a-modern-house-with-a-lot-of-windows-on-the-side-isolated-on_46407798.png"
+                  alt="produit"
+                />
+
+                <h4 class="profil">Immobilier</h4>
+              </div>
+              <!-- fin entete -->
+
+              <!-- debut corps -->
+              <div class="cat-text">
+                <p>
+                  découvre des opportunités près de chez toi ou ailleurs. Trouve
+                  facilement ton futur chez-toi ou ton prochain projet
+                  immobilier avec nous !
+                </p>
+              </div>
+              <!-- fin corps -->
+
+              <!-- pied du cat -->
+              <div class="cat-footer"></div>
+              <a
+                class="btn btn-outline-success"
+                href="public/categorie/immo1.html"
+                >Go <i class="bi bi-arrow-up-right-square-fill"></i
+              ></a>
+              <!-- fin pied de cat -->
+            </div>
+          </div>
+          <!-- fin immo -->
+
+          <!-- debut loisi -->
+          <div class="cat-loisi">
+            <div class="cat-body">
+              <!-- entete -->
+              <div class="cat-header">
+                <img
+                  class="profil-img"
+                  src="public/img_cate_com/tourisme/vecteezy_africa-safari-png-design-illustration_8491374.png"
+                  alt="produit"
+                />
+
+                <h4 class="profil">Loisir & Voyage</h4>
+              </div>
+              <!-- fin entete -->
+
+              <!-- debut corps -->
+              <div class="cat-text">
+                <p>
+                  Envie de prendre l’air et de changer d’horizon ? Ici, tu
+                  trouveras tout pour tes moments de détente et tes escapades.
+                  Que ce soit pour une balade, un weekend improvisé ou des
+                  vacances de rêve, on te propose des idées, des accessoires et
+                  des bons plans pour profiter à fond !
+                </p>
+              </div>
+              <!-- fin corps -->
+
+              <!-- pied du cat -->
+              <div class="cat-footer">
+                <a
+                  class="btn btn-outline-success"
+                  href="public/categorie/loisi_voy1.html"
+                  >Go <i class="bi bi-arrow-up-right-square-fill"></i
+                ></a>
+              </div>
+
+              <!-- fin pied de cat -->
+            </div>
+          </div>
+          <!-- fin loisi -->
+
+          <!-- debut mode -->
+          <div class="cat-mod">
+            <div class="cat-body">
+              <!-- entete -->
+              <div class="cat-header">
+                <img
+                  class="profil-img"
+                  src="public/img_cate_com/mode/cosmetiques-illustration.png"
+                  alt="produit"
+                />
+
+                <h4 class="profil">Cosmétique & Mode</h4>
+              </div>
+              <!-- fin entete -->
+
+              <!-- debut corps -->
+              <div class="cat-text">
+                <p>
+                  Révèle ta beauté, affirme ton style. Explore notre univers
+                  dédié à la cosmétique et à la mode, pensé pour sublimer ta
+                  personnalité au quotidien.
+                </p>
+              </div>
+              <!-- fin corps -->
+
+              <!-- pied du cat -->
+              <div class="cat-footer">
+                <a
+                  class="btn btn-outline-success"
+                  href="public/categorie/mode1.html"
+                  >Go <i class="bi bi-arrow-up-right-square-fill"></i
+                ></a>
+              </div>
+
+              <!-- fin pied de cat -->
+            </div>
+          </div>
+          <!-- fin mod -->
+
+          <!-- debut vehi -->
+          <div class="cat-vehi">
+            <div class="cat-body">
+              <!-- entete -->
+              <div class="cat-header">
+                <img
+                  class="profil-img"
+                  src="public/img_cate_com/bolide/vecteezy_white-sport-car-on-transparent-background-3d-rendering_25305916.png"
+                  alt="produit"
+                />
+
+                <h4 class="profil">Véhicule & Moto</h4>
+              </div>
+              <!-- fin entete -->
+
+              <!-- debut corps -->
+              <div class="cat-text">
+                <p>
+                  Trouvez le véhicule qui vous correspond ! Découvrez notre
+                  large sélection de voitures, motos, scooters et véhicules
+                  utilitaires adaptés à tous les budgets et tous les besoins
+                </p>
+              </div>
+              <!-- fin corps -->
+
+              <!-- pied du cat -->
+              <div class="cat-footer">
+                <a
+                  class="btn btn-outline-success"
+                  href="public/categorie/vehi_mo1.html"
+                  >Go <i class="bi bi-arrow-up-right-square-fill"></i
+                ></a>
+              </div>
+
+              <!-- fin pied de cat -->
+            </div>
+          </div>
+          <!-- fin vehi -->
+
+          <!-- debut vet -->
+          <div class="cat-vet">
+            <div class="cat-body">
+              <!-- entete -->
+              <div class="cat-header">
+                <img
+                  class="profil-img"
+                  src="public/img_cate_com/vete/vecteezy_white-basic-crew-neck-t-shirt-mockup-for-apparel_60116768.png"
+                  alt="produit"
+                />
+
+                <h4 class="profil">Vêtement & Chaussure</h4>
+              </div>
+              <!-- fin entete -->
+
+              <!-- debut corps -->
+              <div class="cat-text">
+                <p>
+                  Exprime ton style à chaque pas ! Découvre notre collection
+                  tendance de vêtements et chaussures soigneusement sélectionnée
+                  pour allier confort, qualité et élégance.
+                </p>
+              </div>
+              <!-- fin corps -->
+
+              <!-- pied du cat -->
+              <div class="cat-footer">
+                <a
+                  class="btn btn-outline-success"
+                  href="public/categorie/vet_chau1.html"
+                  >Go <i class="bi bi-arrow-up-right-square-fill"></i
+                ></a>
+              </div>
+
+              <!-- fin pied de cat -->
+            </div>
+          </div>
+          <!-- fin vet -->
+        </div>
+        <div class="cat-invest">
+          <div class="cat-body-invest">
+            <!-- entete -->
+            <div class="cat-header">
+              <img class="profil-img" src="public/vite.svg" alt="produit" />
+
+              <h4 class="profil">Mining Gold Deals</h4>
+            </div>
+            <!-- fin entete -->
+
+            <!-- debut corps -->
+            <div class="cat-text">
+              <p>
+                Opportunité exceptionnelle dans le secteur minier ! Nous mettons
+                en vente des sites miniers stratégiquement situés, riches en
+                ressources naturelles (or, zircon, sable, calcaire, etc.), avec
+                des documents légaux à jour et prêts pour l’exploitation.
+              </p>
+            </div>
+            <!-- fin corps -->
+
+            <!-- pied du cat -->
+            <div class="cat-footer">
+              <a
+                class="btn btn-outline-success"
+                href="public/categorie/minier.html"
+                >Go <i class="bi bi-arrow-up-right-square-fill"></i
+              ></a>
+            </div>
+
+            <!-- fin pied de cat -->
+          </div>
+        </div>
+      </div>
+
+      <!-- fin partir main les categories -->
+    </section>
+    <!-- =======partie about -->
+    <section>
+      <div class="container-about">
+        <div class="about-body">
+          <div class="about-image">
+            <img
+              src="public/img/img for about/cheerful-male-using-laptop-outdoors.jpg"
+              width=""
+              alt=""
+            />
+          </div>
+          <div class="about-contenu">
+            <span>Notre mission</span>
+            <h2>Engagement neutre et sérieux</h2>
+            <p class="text-about">
+              Chez HAKMAL AIO, nous nous engageons à fournir un contenu sérieux,
+              neutre et commercialement indépendant. Cette philosophie est au
+              cœur de chacun de nos page, qu'ils soient du secteur automobile ou
+              d'autres secteurs émergents. Nous nous engageons à respecter cette
+              règle fondamentale.
+            </p>
+            <a class="btn btn-success btn-lg" href="public/mypage/mypromo.html"
+              >A PROPOS</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========== fin partie about========= -->
+
+    <!-- ==============parti temoin======================== -->
+    <section>
+      <div class="temoin container-fluid">
+        <div class="temoin-header">
+          <p>Témoignages</p>
+          <h2>Ce qu'ils disent de nous</h2>
+        </div>
+        <div class="temoin-body">
+          <div id="carouselExampleDark" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner les-temoin">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <div class="temoin-text container-fluid">
+                  <div class="temoin-text-header">
+                    <span>chauffeur de taxi à Dakar</span>
+                    <h3>Alexis Manga</h3>
+                  </div>
+                  <p>
+                    "J’ai acheté une voiture d’occasion sur le site pour mon
+                    activité de taxi, et franchement, je suis très satisfait. Le
+                    véhicule était en très bon état, comme indiqué dans les
+                    photos. La transaction s’est faite rapidement et en toute
+                    sécurité. Le service client m’a bien guidé du début à la
+                    fin. C’est un site sérieux que je recommande aux collègues
+                    chauffeurs."
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <div class="temoin-text container-fluid">
+                  <div class="temoin-text-header">
+                    <span>coiffeuse à Jaxaay</span>
+                    <h3>Delphine Mendy</h3>
+                  </div>
+                  <p>
+                    "J’ai commandé une robe et des sandales pour un événement,
+                    et je les ai reçues à temps. Les produits étaient de bonne
+                    qualité et bien emballés. Ce que j’ai aimé, c’est la
+                    communication rapide avec le vendeur. On sent que le site
+                    prend ses clients au sérieux. Je vais refaire une commande
+                    pour mes enfants bientôt."
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="temoin-text container-fluid">
+                  <div class="temoin-text-header">
+                    <span>Développeur</span>
+                    <h3>Mamadou Thiam</h3>
+                  </div>
+                  <p>
+                    "J’ai acheté une paire de baskets tendance et je l’ai reçue
+                    en seulement 3 jours. La qualité est top et la taille
+                    parfaite. J’ai aussi apprécié l’emballage soigné et
+                    professionnel. C’est rassurant de voir un site local aussi
+                    sérieux. Je repasserai sûrement une commande bientôt."
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============= partir footer ===================== -->
+
+    <section>
+      <!-- partir footer -->
+      <div class="footer-page">
+        <div class="pose-quest">
+          <p>une question ?</p>
+          <h2>Contactez-nous!</h2>
+        </div>
+
+        <div class="footer-page-adresse">
+          <div class="footer-page-adresse_head">
+            <p>Adresse</p>
+          </div>
+          <p>SENEGAL - DAKAR-Keurmassar Jaxaay 2 Unité 20</p>
+        </div>
+
+        <div class="footer-page-contact">
+          <div class="footer-page-contact_head">
+            <p>Contact</p>
+          </div>
+          <a href="mailto:barrylamarana11@gmail.com" class="mail"
+            >hakmal.aio@gmail.com</a
+          >
+          <a href="tel:+221775092119">+221 77 509 21 19</a>
+        </div>
+      </div>
+      <!-- fin partir footer -->
+    </section>
+
+    <!-- =============== partir pour l'insertion du js ==============-->
+
+    <!-- =============== partir footer 2 with link ================== -->
+
+    <section>
+      <div class="footer-page2">
+        <div class="footer-page2-logo">
+          <p>HAKMAL <span>AIO</span></p>
+          <img src="../logo/logo_office_orange.png" alt="" />
+        </div>
+        <div class="footer-page2-link">
+          <div class="footer-page2-link-header"><p>liens</p></div>
+          <div class="footer-page2-les-link">
+            <p><a href="index.html">Accueille</a></p>
+            <p><a href="public/mypage/mypromo.html">My Promo</a></p>
+            <p><a href="public/mypage/about.html">Contact</a></p>
+            <p><a href="public/mypage/about.html">A propos</a></p>
+          </div>
+        </div>
+        <div class="footer-page2-socio">
+          <div class="footer-page2-link-header"><p>Reseau Social</p></div>
+          <ul class="footer-page2-socio-link">
+            <li>
+              <a href="#"><i class="bi bi-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="bi bi-tiktok"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="bi bi-twitter-x"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-page2-contact">
+          <div class="footer-page2-contact-header">
+            <p>Dites nous votre problème</p>
+          </div>
+          <form action="">
+            <div class="form-floating mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="floatingInput"
+                placeholder=""
+              />
+              <label for="floatingInput">Nom & Prénom</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="floatingInput"
+                placeholder="name@example.com"
+              />
+              <label for="floatingInput">Email</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input
+                type="number"
+                class="form-control"
+                id="floatingInput"
+                placeholder="77 000 00 00"
+              />
+              <label for="floatingInput">Numéro de téléphone</label>
+            </div>
+            <div class="form-floating">
+              <textarea
+                class="form-control"
+                placeholder="Description"
+                id="floatingTextarea2"
+                style="height: 100px"
+              ></textarea>
+              <label for="floatingTextarea2">Description</label>
+            </div>
+            <button type="button" class="btn btn-outline-secondary mybtn">
+              Envoyez
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="copyri">
+        <p>
+          HAKMAL ALL IN ONE est une marque du groupe KRATOS 2025. Tous droits
+          réservés.
+        </p>
+      </div>
+    </section>
+
+    <!-- =============== fin partir footer 2 with link ============== -->
+
+    <!-- my js -->
+    <script type="module" src="/src/main.js"></script>
+
+    <!-- insertion cdn icon bstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <!-- js bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- js swipper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- fin partir insertion js -->
+  </body>
+</html>

@@ -1,0 +1,116 @@
+ <!-- <div
+        class="modal fade"
+        id="articleModal"
+        tabindex="-1"
+        aria-labelledby="articleModalLabel"
+      >
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="articleModalLabel">zombieland</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Fermer"
+              ></button>
+            </div>
+
+            <div class="modal-body text-center">
+              <p id="modalDescription">my Description</p>
+              <img
+                id="modalImage"
+                src=""
+                class="img-fluid rounded mb-3"
+                alt=""
+              />
+              < =======for carossel modal======-->
+              <!-- <div class="card text-bg-white img_modal zone_img_modal">
+                <div class="card-img-overlay"> -->
+                  <!-- <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text"><small>Last updated 3 mins ago</small></p> -->
+                <!-- </div>
+              </div> -->
+
+              <!-- ==fin carossel modal======= -->
+              <!-- <p id="modalDescription"></p>
+              <p class="fw-bold text-primary" id="modalPrice"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      data-title="Peugeot 308 News model 2017 Diesel Manuel"
+                data-price="7 300 000 F CFA"
+                data-desc="Description: Peugeot 308 News model année 2017 GT
+                  Line d’origine manuel full options 6 vitesses moteur 1.6 grand
+                  écran androïde radio Bluetooth cd gentil allure phare led
+                  kilomètres 98000 toit panoramique ouvrant rétroviseurs
+                  rabattable électrique phare led caméra de recul commande aux
+                  volant verrouillage centralisé."
+                data-image="../img/img vehicule/occase/peugeot/IMG-20250620-WA0183.jpg" -->
+                <!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Boutique WhatsApp</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    .product {
+      border: 1px solid #ccc;
+      padding: 15px;
+      margin-bottom: 15px;
+      width: 250px;
+    }
+
+    .whatsapp-button {
+      background-color: #25D366;
+      color: white;
+      padding: 10px 15px;
+      text-decoration: none;
+      border-radius: 5px;
+      display: inline-block;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Nos Produits</h1>
+
+  <div class="product" data-name="Chaussures Sport" data-price="30000">
+    <h2>Chaussures Sport</h2>
+    <p>Prix : 30 000 FCFA</p>
+    <a href="#" class="whatsapp-button" onclick="sendWhatsApp(this)">Commander via WhatsApp</a>
+  </div>
+
+  <div class="product" data-name="Sac à dos" data-price="15000">
+    <h2>Sac à dos</h2>
+    <p>Prix : 15 000 FCFA</p>
+    <a href="#" class="whatsapp-button" onclick="sendWhatsApp(this)">Commander via WhatsApp</a>
+  </div>
+
+  <script>
+   const phoneNumber = "221774686623"; // Remplace par ton numéro WhatsApp
+
+    function sendWhatsApp(button) {
+      const productDiv = button.closest('.product');
+      const name = productDiv.dataset.name;
+      const price = productDiv.dataset.price;
+
+      const message = Bonjour, je suis intéressé(e) par le produit "${name}" à ${price} FCFA.;
+      const encodedMessage = encodeURIComponent(message);
+      const whatsappURL = https://wa.me/${phoneNumber}?text=${encodedMessage};
+
+      window.open(whatsappURL, '_blank');
+    }
+
+  </script>
+
+</body>
+</html>
